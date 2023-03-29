@@ -27,6 +27,7 @@
     <body>
         <div class="header">
             <div class="logo"><a href="Pomodoro.html"> Pomodoro </a></div>
+            
             <div class="menu-links">
                 <?php
                     wp_nav_menu( 
@@ -39,13 +40,7 @@
                         );
                 ?>
             </div>
-            
-
-            <div class="links">
-            
-                <a href="whypomodoro.html">Why Pomodoro</a>
-                <a href="aboutus.html">About us</a>
-            </div>
+    
             <div class="signup">
                 <button id="signupbtn" onclick="signupbtn()">Sign Up</button>
             </div>

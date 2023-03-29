@@ -68,15 +68,6 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.links a{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: black;
-    padding-inline: 1em;
-    font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
-}
-
 #signupbtn{
     padding: 1em 2em;
     background: none;
