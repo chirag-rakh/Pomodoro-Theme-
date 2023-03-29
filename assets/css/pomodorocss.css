@@ -1,0 +1,441 @@
+:root{
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content:space-between; /*it distributes items with equal length*/
+    padding: 1em 5%;
+    border-bottom: 1px solid black;
+    align-items: center; /*it alligns items center vertically*/
+}
+
+.logo a{
+    text-decoration: none;
+    color: unset;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.links a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding-inline: 1em;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#signupbtn{
+    padding: 1em 2em;
+    background: none;
+    border-radius: 0.3em;
+    border-width: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#signupbtn:hover{
+    cursor: pointer;
+}
+
+.herobanner{
+    background-image: url(wp-content/theme/pomodoro-theme/assets/images/productivity-hacks.jpg);
+    background-color: crimson;
+    background-size: cover; /* adjust the size of the image */
+    background-repeat: no-repeat; /* don't repeat the image */
+    background-position: center; /* center the image */
+    height: 41em;
+}
+
+.herotext{
+    display: block;
+    float: right;
+    margin-right: 10%;
+    margin-top: 10em;
+    width: 30%;
+}
+
+.heroheading{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 1em;
+    font-size: 5rem;
+    -webkit-text-stroke: 1px white;
+}
+
+.herosubtext{
+    margin-right: 20%;
+    line-height: 3rem;
+    -webkit-text-stroke: 0.1px rgb(101, 101, 255);
+}
+
+
+/*start of main container*/
+
+.maincontent{
+    background-image: url(images/timer.jpg);
+    background-size: cover; /* adjust the size of the image */
+    background-repeat: no-repeat; /* don't repeat the image */
+    background-position: center; /* center the image */
+    height: 41em;
+    color: aliceblue;
+}
+
+.pomodoro{
+    padding: 10em 10em;
+    width: 50%;
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px ;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    margin-inline: auto;
+}
+.timer p{
+    padding-inline: 0.15em;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 10em;
+    height: 100px;
+    margin-inline: auto;
+
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 1.2em;
+    text-align: center;
+}
+
+.footer .logo{
+    padding-bottom: 2em;
+}
+
+.line{
+    height: 1px;
+    background-color: white;
+    opacity: 0.5;
+    width: 50%;
+    margin-inline: auto;
+}
+
+.footertext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em;
+    width: 20%;
+    margin-inline: auto;
+}
+
+/*button css*/
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    overflow: hidden;
+    transition: 0.s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+
+  /*Why Pomodoro page*/
+
+  .container{
+    margin: auto;
+    width: 60%;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 4em;
+  }
+
+  .container h1, .abtuscontainer h1{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  .container p, .abtuscontainer p {
+    line-height: 4rem;
+    font-size: 18px;
+    margin: 20px;
+    text-align: justify;
+  }
+  .container .highlight {
+    background-color: lightyellow;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  /*About us page*/
+  .abtuscontainer{
+    margin-top: 50px;
+    margin-inline: auto;
+    padding:2rem 0;
+    width: 60%;
+    background-color: rgb(221, 255, 248);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  /*main page*/
+
+  /*Active (Work or Break)*/
+  #active{
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /*Break counter*/
+  #breakcounter{
+    text-align: center;
+    padding: 10%;
+  }
+
+  /*Message window */
+
+  .msgwindow{
+    font-size:4rem;
+    margin:1em;
+    padding:0.1em;
+    text-align:center;
+  }
+
+  /*Unordered List*/
+  ul{
+    list-style-position: inside;
+  }
+
+  ul li{
+    line-height: 6rem;
+    font-family: sans-serif;
+    margin-left: 10%;
+  }
+
+  /*line at the end of why pomodoro page*/
+  .whypomodoroline{
+    border-top: 2px solid black;
+    height: 50px;
+  }
+
+
+  /*Mobile Compatible*/
+
+  @media screen and (max-width: 1285px){
+    .container, .abtuscontainer{
+      width: 70%;
+    }
+
+    .container h1, .abtuscontainer h1{
+      font-size: 28px;
+    }
+
+    .container p, .abtuscontainer p{
+      font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 1010px) {
+    .herobanner .herotext{
+      width: 40%;
+      margin-right: 5%;
+    }
+
+    .herobanner{
+      background-position-x: right;
+    }
+
+    .pomodoro{
+      margin-inline: auto;
+      padding: 10em 2em;
+    }
+
+    .maincontent .pomodoro .controls{
+      display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 50px;
+    margin-inline: auto;
+    }
+
+    .footer .line{
+      width: 80%;
+    }
+
+    .footer .footertext{
+      width: 40%;
+    }
+
+    /*why pomodoro page*/
+    .container, .abtuscontainer{
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .herobanner .herotext{
+      width: 60%;
+      margin-right: 10%;
+    }
+
+    .herobanner{
+      background-position-x: right;
+    }
+
+    .container, .abtuscontainer{
+      width: 90%;
+    }
+
+    .container h1, .abtuscontainer h1{
+      font-size: 25px;
+    }
+
+    .container p, .abtuscontainer p{
+      font-size: 16px;
+      line-height: 3.5rem;
+    }
+
+    .container ul li{
+      font-size: 16px;
+      line-height: 4rem;
+    }
+  }
+
+
+  @media screen and (max-width: 599px) {
+    .header{
+      flex-direction: column;
+      height: 12em;      
+    }
+
+    .herobanner .herotext {
+      padding-top:2rem;
+      margin-inline: auto;
+      float: left;
+      width: auto;
+      margin: 2rem;
+    }
+
+    .footer .footertext{
+      width: 60%;
+    }
+
+    .pomodoro{
+      padding: 10em 0;
+    }
+
+    .container h1, .abtuscontainer h1{
+      font-size: 24px;
+    }
+
+    .container p, .abtuscontainer p{
+      font-size: 15px;
+      line-height: 3rem;
+    }
+
+    .container ul li{
+      line-height: 3.5rem;
+      font-size: 15px;
+    }
+
+  }
+
+  @media screen and (max-width: 410px){
+    .heroheading{
+      font-size: 4rem;
+    }
+
+    .footer .footertext{
+      width: 80%;
+    }
+
+    .container h1, .abtuscontainer h1{
+      font-size: 22px;
+    }
+
+    .container p, .abtuscontainer p{
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 340px){
+    .header .links{
+      display: flex;
+      align-items: center;
+      justify-content:space-evenly;
+      height: 6rem;
+      flex-direction: column;
+    }
+    .heroheading{
+      font-size: 3rem;
+    }
+
+    .pomodoro{
+      width: fit-content;
+    }
+
+    .footer .footertext{
+      width: auto;
+    }
+  }
