@@ -26,8 +26,8 @@
     </head>
     <body>
         <div class="header">
-            <div class="logo"><a href="Pomodoro.html"> Pomodoro </a></div>
-            
+            <div class="logo"><a href="Pomodoro.html"> <?php echo get_bloginfo( 'name' ) ?> </a></div>
+
             <div class="menu-links">
                 <?php
                     wp_nav_menu( 

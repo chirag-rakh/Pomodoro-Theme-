@@ -20,12 +20,12 @@ get_header();
             </div>
             <div class="controls">
                     <button data-text="Awesome" class="button" id="start" onclick="start()">
-                        <span class="actual-text">&nbsp;start&nbsp;</span>
-                        <span class="hover-text" aria-hidden="true">&nbsp;start&nbsp;</span>
+                        <span class="actual-text">start</span>
+                        <span class="hover-text" aria-hidden="true">start</span>
                     </button>
                     <button data-text="Awesome" class="button" onclick="stop()">
-                        <span class="actual-text">&nbsp;reset&nbsp;</span>
-                        <span class="hover-text" aria-hidden="true">&nbsp;reset&nbsp;</span>
+                        <span class="actual-text">reset</span>
+                        <span class="hover-text" aria-hidden="true">reset</span>
                     </button>
             </div>
             <p id="breakcounter"></p>
