@@ -49,6 +49,25 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.menu-links ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.menu-links li{
+  margin-left: 0%;
+}
+
+.menu-links a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  padding-inline: 1em;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .links a{
     text-decoration: none;
     text-transform: capitalize;

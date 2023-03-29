@@ -27,14 +27,22 @@
     <body>
         <div class="header">
             <div class="logo"><a href="Pomodoro.html"> Pomodoro </a></div>
-
-
-            <?php
-                
-            ?>
-
+            <div class="menu-links">
+                <?php
+                    wp_nav_menu( 
+                        array(
+                            'menu' => 'primary',
+                            'container' => '',
+                            'theme_location' => 'primary',
+                            'items_wrap' => '<ul id="" class="">%3$s</ul>'
+                        )
+                        );
+                ?>
+            </div>
+            
 
             <div class="links">
+            
                 <a href="whypomodoro.html">Why Pomodoro</a>
                 <a href="aboutus.html">About us</a>
             </div>
