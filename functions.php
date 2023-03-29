@@ -18,4 +18,18 @@ function pomodoro_enqueue_script(){
 
 add_action( 'wp_enqueue_scripts', 'pomodoro_enqueue_script' );
 
+
+//Adding wordpress menus
+function pomodoro_menu() {
+  $locations = array(
+    'primary' => "Desktop primary menu"
+  );
+
+  register_nav_menus( $locations );
+
+}
+
+add_action( 'init', 'pomodoro_menu' );
+
+
 ?>

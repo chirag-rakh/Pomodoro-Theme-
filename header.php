@@ -27,6 +27,13 @@
     <body>
         <div class="header">
             <div class="logo"><a href="Pomodoro.html"> Pomodoro </a></div>
+
+
+            <?php
+                
+            ?>
+
+
             <div class="links">
                 <a href="whypomodoro.html">Why Pomodoro</a>
                 <a href="aboutus.html">About us</a>
