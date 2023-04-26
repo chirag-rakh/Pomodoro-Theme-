@@ -57,6 +57,7 @@ html, body {
 
 .menu-links li{
   margin-left: 0%;
+  line-height: 2rem;
 }
 
 .menu-links a{
@@ -82,7 +83,6 @@ html, body {
 
 .herobanner{
     background-image: url(/assets/images/productivity-hacks.jpg);
-    background-color: crimson;
     background-size: cover; /* adjust the size of the image */
     background-repeat: no-repeat; /* don't repeat the image */
     background-position: center; /* center the image */
